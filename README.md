@@ -40,29 +40,29 @@ The down payment is calculated as a percentage of the car value.
 
 ## Directory Structure
 
-.
-├── index.html           # Main HTML file
-├── style.css            # CSS styles for the application
+├── index.html                 # Main HTML file
+├── style.css                  # CSS styles for the application
 ├── js/
-|   ├── app.js           # Main JavaScript file including all module imports
-|   ├── components/      # JavaScript modules for custom elements
+|   ├── app.js                 # Main JavaScript file including all module imports
+|   ├── components/            # JavaScript modules for custom elements
 |   |   ├── car-type.js
 |   |   ├── car-value.js
 |   |   ├── lease-period.js
 |   |   ├── down-payment.js
 |   |   ├── leasing-results.js
 |   |   └── calculator-form.js
-|   ├── inputHandlers/   # JavaScript modules for input event handlers
+|   ├── inputHandlers/         # JavaScript modules for input event handlers
 |   |   ├── carTypeHandler.js
 |   |   ├── carValueHandler.js
 |   |   ├── leasePeriodHandler.js
 |   |   └── downPaymentHandler.js
-|   ├── calculations/    # JavaScript modules for calculations
+|   ├── calculations/          # JavaScript modules for calculations
 |   |   └── calculateLease.js
-|   └── validation/      # JavaScript modules for input validation
+|   └── validation/            # JavaScript modules for input validation
 |       ├── carValueValidation.js
 |       └── leasePeriodValidation.js
-└── README.md            # Documentation for the application
+└── README.md                  # Documentation for the application
+
 
 
 ## Technology Stack
