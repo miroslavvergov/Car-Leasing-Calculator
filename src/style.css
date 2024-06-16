@@ -1,0 +1,177 @@
+/* 
+ * Basic Styles 
+ * These styles apply to the entire document body and container, 
+ * ensuring a clean and centered layout with a light background.
+ */
+ body {
+  font-family: sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f0f0f0;
+  margin: 0; /* Remove default margin */
+}
+
+.container {
+  background-color: white;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  max-width: 800px;
+  width: 90%;
+}
+
+h1,
+h2 {
+  text-align: center;
+  margin-bottom: 30px; /* Space below headers */
+}
+
+/* 
+ * Form Styles 
+ * Styling the form and its elements for a clean and structured layout.
+ */
+form {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Two columns layout */
+  gap: 50px; /* Space between columns */
+  margin-top: 50px; /* Space above form */
+}
+
+label {
+  font-weight: bold;
+  margin-bottom: 5px; /* Space below labels */
+}
+
+div#divCarType {
+  margin-bottom: 20px; /* Space below car type div */
+}
+
+div#divCarValue {
+  margin-top: 32px; /* Space above car value div */
+}
+
+select,
+input[type="number"],
+input[type="range"] {
+  width: calc(100% - 20px); /* Full width with padding adjustment */
+  padding: 8px; /* Padding inside inputs */
+  border: 1px solid #ccc; /* Light gray border */
+  border-radius: 4px; /* Rounded corners */
+  box-sizing: border-box; /* Include padding in width calculation */
+  font-size: 16px; /* Font size for inputs */
+  margin-top: 15px; /* Space above inputs */
+}
+
+form > * {
+  display: flex;
+  flex-direction: column; /* Stack form elements vertically */
+}
+
+.range-input-container {
+  display: flex;
+  align-items: center; /* Center align number and range inputs */
+}
+
+.range-input-container input[type="number"] {
+  width: calc(100% - 35px); /* Adjust width for number input */
+  margin-right: 5px; /* Space to the right of number input */
+}
+
+.range-input-container::after {
+  content: "%"; /* Add percentage sign after number input */
+  display: inline-block;
+  width: 30px; /* Fixed width for percentage sign */
+}
+
+#results {
+  margin-top: 30px; /* Space above results section */
+}
+
+#results table {
+  width: 100%; /* Full width table */
+  border-collapse: collapse; /* Merge table borders */
+}
+
+#results td {
+  padding: 12px; /* Padding inside table cells */
+  border-bottom: 1px solid #ccc; /* Border between table rows */
+  text-align: left; /* Left align text */
+}
+
+/* 
+ * Results Layout 
+ * Creating a two-column layout for the results section.
+ */
+.results-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Two columns for results */
+  gap: 20px; /* Space between columns */
+}
+
+.results-container .leftColumn,
+.results-container .rightColumn {
+  display: flex;
+  flex-direction: column; /* Stack elements vertically */
+  gap: 12px; /* Space between elements */
+}
+
+.results-container .leftColumn + .rightColumn {
+  border-left: 2px solid #ccc; /* Vertical border between columns */
+  padding-left: 40px; /* Padding to the left of right column */
+}
+
+/* 
+ * Separator Line 
+ * Style for the line separating the form and results sections.
+ */
+.separator {
+  border-top: 2px solid #ccc; /* Horizontal line */
+  margin-top: 15px; /* Space above the line */
+  margin-bottom: 30px; /* Space below the line */
+}
+
+/* 
+ * Responsive Styles 
+ * Adjust layout and spacing for smaller screens.
+ */
+@media (max-width: 768px) {
+  form {
+    display: grid;
+    grid-template-columns: 1fr; /* Single column layout */
+    gap: 0px; /* Remove gap between columns */
+  }
+  
+  div#divCarType {
+    margin-bottom: 18px; /* Adjust space below car type div */
+  }
+  
+  div#divCarValue {
+    margin-top: 18px; /* Adjust space above car value div */
+  }
+
+  .container {
+    padding: 20px; /* Adjust container padding */
+  }
+
+  input[type="number"],
+  input[type="range"],
+  select {
+    font-size: 14px; /* Adjust font size */
+  }
+
+  input[type="range"] {
+    margin-top: 20px; /* Adjust space above range input */
+    margin-bottom: 20px; /* Adjust space below range input */
+  }
+
+  .results-container {
+    grid-template-columns: 1fr; /* Single column layout */
+  }
+
+  .results-container .leftColumn + .rightColumn {
+    border-left: none; /* Remove vertical border */
+    padding-left: 0; /* Remove left padding */
+  }
+}

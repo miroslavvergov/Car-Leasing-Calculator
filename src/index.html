@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Title of the HTML document -->
+    <title>Car Leasing Calculator</title>
+    
+    <!-- Link to the external stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Main container for the calculator -->
+    <div class="container">
+        <!-- Container for the top section of the calculator -->
+        <div id="topContainer">
+            <!-- Custom element for the calculator form -->
+            <calculator-form></calculator-form>
+        </div>
+
+        <!-- Separator between top and bottom sections -->
+        <div class="separator"></div>
+
+        <!-- Container for the bottom section of the calculator -->
+        <div id="bottomContainer">
+            <!-- Custom element for displaying leasing results -->
+            <leasing-results></leasing-results>
+        </div>
+
+    </div>
+    
+    <!-- Include single JavaScript file -->
+    <script type="module" src="js/app.js"></script>
+  </body>
+</html>
