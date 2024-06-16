@@ -65,7 +65,6 @@ The down payment is calculated as a percentage of the car value.
 └── README.md            # Documentation for the application
 
 
-
 ## Technology Stack
 
 - **JavaScript:** Vanilla JavaScript is used for the application logic.
